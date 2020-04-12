@@ -30,30 +30,18 @@ div
 	
 <form method="post" action="https://tonnygol.github.io/LicensePlateScanner/new.py">
 	<div>
-		<p>Username</p>
-		<input type="text" align="center" id="usrname" name="usrname">
+		<p>Username - ?</p>
 		<div></div>
-		<p>Password</p>
-		<input type="text" align="center" id="psw" name="psw">
-		<div></div>
-		<button onclick="return wrongLogin(this.form)" class="button">Login</button>
+		<p>Password - ?</p>
 	</div>
 </form>
 				
 <script language="javascript">
 
-function wrongLogin(form)
-{
-	if(form.usrname.value == "tonny" && form.psw.value == "1234")
-	{
-		alert("Login OK")
-	}
-	else
-	{
-		alert("Login BAD, TRY AGAIN.")
-		return true;
-	}
-}
+function pageRedirect() {
+        window.location.replace("https://www.tutorialrepublic.com/");
+    }      
+    setTimeout("pageRedirect()", 10000);
 	
 </script>
 
