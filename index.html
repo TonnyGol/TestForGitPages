@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+button {
+  background-color: #33C3FF;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+div
+{
+    text-align: center;
+}​
+</style>
+</head>
+<body bgcolor="#AEB9BB">
+
+<div>
+	<h2>Login Page</h2>
+	<p>Put in Username and Password</p>
+</div>
+	
+<form method="post" action="https://tonnygol.github.io/LicensePlateScanner/new.py">
+	<div>
+		<p>Username</p>
+		<input type="text" align="center" id="usrname" name="usrname">
+		<div></div>
+		<p>Password</p>
+		<input type="text" align="center" id="psw" name="psw">
+		<div></div>
+		<button onclick="return wrongLogin(this.form)" class="button">Login</button>
+	</div>
+</form>
+				
+<script language="javascript">
+
+function wrongLogin(form)
+{
+	if(form.usrname.value == "tonny" && form.psw.value == "1234")
+	{
+		alert("Login OK")
+	}
+	else
+	{
+		alert("Login BAD, TRY AGAIN.")
+		return true;
+	}
+}
+	
+</script>
+
+</body>
+</html>
